@@ -9,7 +9,7 @@
 // TODO: write code below
 
 function increment(num) {
-  return num+=1;
+  return ++num;
 }
 
 // Define a function that takes any person's name and returns it with a smiley :)!

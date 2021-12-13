@@ -35,7 +35,7 @@ const vowel = /[aeiou]/i;
   let count = 0;
 for (let i = 0; i < val1.length; i++) {
   if (val1.charAt(i).match(vowel)) {
-    count +=1;
+    count ++;
   }
 }
   return count%2 !== 0;
@@ -65,18 +65,24 @@ function getMiddleLetter (val1) {
 // Summer - June to August
 // Autumn - September to November
 // Winter - December to February
+
+const winterMonths = ["December", "January","February"];
+const springMonths = ["March", "April","May"];
+const summerMonths = ["June", "July","August"];
+const autumnMonths = ["September", "October","November"];
+
 function seasonForMonth (monthName) {
 
-if (monthName === "December" || monthName === "January" || monthName === "February") {
+if (winterMonths.includes(monthName)) {
   return "Winter"
 }
-if (monthName === "March" || monthName === "April" || monthName === "May") {
+if (springMonths.includes(monthName)) {
   return "Spring"
 }
-if (monthName === "June" || monthName === "July" || monthName === "August") {
+if (summerMonths.includes(monthName)) {
   return "Summer"
 }
-if (monthName === "September" || monthName === "October" || monthName === "November") {
+if (autumnMonths.includes(monthName)) {
   return "Autumn"
 }
 else {
