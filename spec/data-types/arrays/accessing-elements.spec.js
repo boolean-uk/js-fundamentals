@@ -6,11 +6,11 @@ describe("Arrays accessing:", () => {
   })
 
   it("fourthCity is Delhi", () => {
-    expect(answers.b).toEqual("Delhi")
+    expect(answers.b).toEqual(answers._c.find(city => city.location === "Delhi"))
   })
 
   it("firstCity is London", () => {
-    expect(answers.c).toEqual("London")
+    expect(answers.c).toEqual(answers._c.find(city => city.location === "London"))
   })
 
   it("lengthOfCitiesArray is 5", () => {
