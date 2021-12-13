@@ -3,7 +3,7 @@
 // if the value is false.
 function getResult (didPass) {
 
-  if (didPass) {
+  if (didPass==true) {
     return "Well done, you passed!";
   }
 
