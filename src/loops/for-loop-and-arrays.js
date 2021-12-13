@@ -20,7 +20,7 @@ for (let i = 0; i<nums.length; i++) {
 word = ''
 
 for (let i = 0; i<letters.length; i++) {
-  word += letters[i].toString();
+  word += letters[i];
 }
 
 // Use a for loop to populate everySecondNum with every second number from the nums array

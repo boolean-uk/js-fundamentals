@@ -23,7 +23,7 @@ return val1 !== "Hello";
 // than string val2
 function isLongerThan (val1, val2) {
 
-return val1.length > val2.length
+return val1.length > val2.length;
 
 }
 
@@ -31,7 +31,7 @@ return val1.length > val2.length
 // argument has an odd number of vowels
 
 function hasOddNumberVowels (val1) {
-let vowel = /[aeiou]/i;
+const vowel = /[aeiou]/i;
   let count = 0;
 for (let i = 0; i < val1.length; i++) {
   if (val1.charAt(i).match(vowel)) {
@@ -54,7 +54,6 @@ function getMiddleLetter (val1) {
   else {
     return val1[(valLength-1)/2];
   }
-
 }
 
 // This function should return the name of the season for the provided

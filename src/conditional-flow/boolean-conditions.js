@@ -3,14 +3,11 @@
 // if the value is false.
 function getResult (didPass) {
 
-  if (didPass==true) {
+  if (didPass) {
     return "Well done, you passed!";
   }
-
-  else {
+  
     return "Sorry, try again";
-  }
-
 }
 
 module.exports = {

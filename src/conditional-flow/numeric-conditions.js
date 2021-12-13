@@ -18,13 +18,6 @@ function isGreaterThan (num1, num2) {
 
 return num1 > num2;
 
-  // if (num1 > num2) {
-  //   return true;
-  // }
-  // else {
-  //   return false;
-  // }
-
 }
 
 // This function should return the lowest number in the passed array
