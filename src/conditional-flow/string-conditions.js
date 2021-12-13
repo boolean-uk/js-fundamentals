@@ -1,14 +1,21 @@
 // This function should return true if the passed string is equal to "Hello"
 function isHello (val1) {
 
-  // TODO: write code in this function body to pass the tests
+  return val1==="Hello";
+
+  // if (val1==="Hello") {
+  //   return true;
+  // }
+  // else {
+  //   return false;
+  // }
 
 }
 
 // This function should return true if the passed string is not equal to "Hello"
 function isNotHello (val1) {
 
-  // TODO: write code in this function body to pass the tests
+return val1 !== "Hello";
 
 }
 
@@ -16,7 +23,7 @@ function isNotHello (val1) {
 // than string val2
 function isLongerThan (val1, val2) {
 
-  // TODO: write code in this function body to pass the tests
+return val1.length > val2.length
 
 }
 
@@ -24,9 +31,14 @@ function isLongerThan (val1, val2) {
 // argument has an odd number of vowels
 
 function hasOddNumberVowels (val1) {
-
-  // TODO: write code in this function body to pass the tests
-
+let vowel = /[aeiou]/i;
+  let count = 0;
+for (let i = 0; i < val1.length; i++) {
+  if (val1.charAt(i).match(vowel)) {
+    count +=1;
+  }
+}
+  return count%2 !== 0;
 }
 
 // this function should return the middle character of a string if it has an odd number
@@ -35,6 +47,13 @@ function hasOddNumberVowels (val1) {
 
 function getMiddleLetter (val1) {
   // TODO: write code in this function body to pass the tests
+  let valLength = val1.length;
+  if (valLength%2 === 0) {
+    return val1[valLength/2 - 1] + val1[(valLength)/2];
+  }
+  else {
+    return val1[(valLength-1)/2];
+  }
 
 }
 
@@ -49,7 +68,21 @@ function getMiddleLetter (val1) {
 // Winter - December to February
 function seasonForMonth (monthName) {
 
-  // TODO: write code in this function body to pass the tests
+if (monthName === "December" || monthName === "January" || monthName === "February") {
+  return "Winter"
+}
+if (monthName === "March" || monthName === "April" || monthName === "May") {
+  return "Spring"
+}
+if (monthName === "June" || monthName === "July" || monthName === "August") {
+  return "Summer"
+}
+if (monthName === "September" || monthName === "October" || monthName === "November") {
+  return "Autumn"
+}
+else {
+  return "";
+}
 }
 
 module.exports = {
