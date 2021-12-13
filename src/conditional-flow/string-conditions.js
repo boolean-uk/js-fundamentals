@@ -1,14 +1,21 @@
 // This function should return true if the passed string is equal to "Hello"
 function isHello (val1) {
 
-  // TODO: write code in this function body to pass the tests
+  return val1==="Hello";
+
+  // if (val1==="Hello") {
+  //   return true;
+  // }
+  // else {
+  //   return false;
+  // }
 
 }
 
 // This function should return true if the passed string is not equal to "Hello"
 function isNotHello (val1) {
 
-  // TODO: write code in this function body to pass the tests
+return val1 !== "Hello";
 
 }
 
@@ -16,7 +23,7 @@ function isNotHello (val1) {
 // than string val2
 function isLongerThan (val1, val2) {
 
-  // TODO: write code in this function body to pass the tests
+return val1.length > val2.length;
 
 }
 
@@ -24,9 +31,14 @@ function isLongerThan (val1, val2) {
 // argument has an odd number of vowels
 
 function hasOddNumberVowels (val1) {
-
-  // TODO: write code in this function body to pass the tests
-
+const vowel = /[aeiou]/i;
+  let count = 0;
+for (let i = 0; i < val1.length; i++) {
+  if (val1.charAt(i).match(vowel)) {
+    count ++;
+  }
+}
+  return count%2 !== 0;
 }
 
 // this function should return the middle character of a string if it has an odd number
@@ -35,7 +47,13 @@ function hasOddNumberVowels (val1) {
 
 function getMiddleLetter (val1) {
   // TODO: write code in this function body to pass the tests
-
+  let valLength = val1.length;
+  if (valLength%2 === 0) {
+    return val1[valLength/2 - 1] + val1[(valLength)/2];
+  }
+  else {
+    return val1[(valLength-1)/2];
+  }
 }
 
 // This function should return the name of the season for the provided
@@ -47,9 +65,29 @@ function getMiddleLetter (val1) {
 // Summer - June to August
 // Autumn - September to November
 // Winter - December to February
+
+const winterMonths = ["December", "January","February"];
+const springMonths = ["March", "April","May"];
+const summerMonths = ["June", "July","August"];
+const autumnMonths = ["September", "October","November"];
+
 function seasonForMonth (monthName) {
 
-  // TODO: write code in this function body to pass the tests
+if (winterMonths.includes(monthName)) {
+  return "Winter"
+}
+if (springMonths.includes(monthName)) {
+  return "Spring"
+}
+if (summerMonths.includes(monthName)) {
+  return "Summer"
+}
+if (autumnMonths.includes(monthName)) {
+  return "Autumn"
+}
+else {
+  return "";
+}
 }
 
 module.exports = {

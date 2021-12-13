@@ -22,10 +22,18 @@ const basket = {
 // as well as modify some of the existing code
 
 // Set this variable to the length of the baskets voucher codes array
-const numberOfVoucherCodes = null
+const numberOfVoucherCodes = basket.voucherCodes.length;
 
 // Set this variable to the first element in of the baskets voucher codes array
-const firstVoucherCode = null
+const firstVoucherCode = basket.voucherCodes[0];
+
+basket.items[0].price = 2;
+
+basket.items.push(    
+  {name: 'Oranges',
+  quantity: 4,
+  price: 0.75
+});
 
 // Do not edit this exported object
 module.exports = {
