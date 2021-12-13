@@ -8,7 +8,7 @@ numThree = 5
 
 // TODO: Update the code below so that the tests pass
 
-const numOnePlusNumTwo = 12 // Set this variable to numOne plus numTwo
+const numOnePlusNumTwo = numOne + numTwo // Set this variable to numOne plus numTwo
 
 // do not edit this section
 module.exports = {
