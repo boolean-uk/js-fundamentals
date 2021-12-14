@@ -2,14 +2,14 @@
 function isHello (val1) {
 
   // TODO: write code in this function body to pass the tests
-
+return val1 === 'Hello'
 }
 
 // This function should return true if the passed string is not equal to "Hello"
 function isNotHello (val1) {
 
   // TODO: write code in this function body to pass the tests
-
+return !isHello(val1)
 }
 
 // This function should return true if the string val1 is is longer
