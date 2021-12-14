@@ -10,6 +10,7 @@ function getResult (didPass) {
   }
 }
 
+
 module.exports = {
   a: getResult
 }

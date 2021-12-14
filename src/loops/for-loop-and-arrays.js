@@ -33,6 +33,7 @@ const numsReversed = []
 for (let i = nums.length - 1; i >= 0; i--) {
   numsReversed.push(nums[i])
 }
+
 // do not change below this line
 module.exports = {
   a: sum,
