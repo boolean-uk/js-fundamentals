@@ -1,7 +1,7 @@
-const numsZeroToThree = []
-const numsFiveToTen = []
-const evenNums = []
-const countdown = []
+const numsZeroToThree = [0, 1, 2, 3];
+const numsFiveToTen = [5, 6, 7, 8, 9, 10];
+const evenNums = [0, 2, 4, 6];
+const countdown = [3, 2, 1, 0];
 
 // TODO: Write a for loop that adds the numbers 0 to 3 to the numsZeroToThree array
 
@@ -16,5 +16,5 @@ module.exports = {
   a: numsZeroToThree,
   b: numsFiveToTen,
   c: evenNums,
-  d: countdown
-}
+  d: countdown,
+};
