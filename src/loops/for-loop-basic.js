@@ -12,11 +12,11 @@ for (let i = 5; i < 11; i++) {
 numsFiveToTen.push(i)
 }
 // TODO: Write a for loop that adds all the even numbers between 0 and 6 (0, 2, 4, 6) to evenNums
-for (let i = 0; i < evenNums; i++) {
-  evenNums.push([0, 2, 4, 6])
+for (let i = 0 ; i < 8; i += 2) {
+  evenNums.push(i)
 }
 // TODO: Write a for loop that adds the numbers 3 to 0 (in that order) to the countdown array
-for (let i = 0; 4 > i; i++){
+for (let i = 3; i > -1; i--){
 countdown.push(i)
 }
 // do not change below this line
