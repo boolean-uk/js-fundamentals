@@ -4,7 +4,7 @@ const book = {
     author: 'Robert C. Martin',
     category: 'Programming',
     isbn: {
-        isbn10: '9780132350884',
+        isbn13: '978-0132350884',
         asin: '0132350882'
     },
     publisher: 'Prentice Hall',
@@ -21,7 +21,8 @@ const name = 'Clean Code'
 // Set this to the isbn 10 value
 const isbn10 = '9780132350884'
 
-const programming = '464'
+book.pages = 464
+book.ISBN13 = 978 - 0132350884
 
 // Do not edit this exported object
 module.exports = {
