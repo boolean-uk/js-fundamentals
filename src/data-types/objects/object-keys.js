@@ -4,11 +4,9 @@ const book = {
     author: 'Robert C. Martin',
     category: 'Programming',
     isbn: {
-        isbn13: '978-0132350884',
-        asin: '0132350882'
+        isbn13: '978-0132350884'
     },
-    publisher: 'Prentice Hall',
-    dimensions: '10x12x2'
+    publisher: 'Prentice Hall'
 }
 
 const isbn13 = '978-0132350884'
