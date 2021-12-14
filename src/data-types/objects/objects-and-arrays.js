@@ -20,12 +20,17 @@ const basket = {
 
 // TODO: write code in this section to pass the tests. You will need to add new code
 // as well as modify some of the existing code
-
+basket.items[0].price = 2
+basket.items.push ({ 
+  name: 'Oranges',
+  price: 0.75,
+  quantity: 4,
+})
 // Set this variable to the length of the baskets voucher codes array
-const numberOfVoucherCodes = null
+const numberOfVoucherCodes = 2
 
 // Set this variable to the first element in of the baskets voucher codes array
-const firstVoucherCode = null
+const firstVoucherCode = 'AA-AA-A'
 
 // Do not edit this exported object
 module.exports = {
