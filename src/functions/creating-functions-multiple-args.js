@@ -9,7 +9,13 @@
 // -1, 1        | [-1, 0, 1]
 //
 // TODO: write code below
-
+const createRangeArray = (lower,upper) => {
+  let rangeArray = [];
+  for (let i=upper;i>=lower;i--){
+     rangeArray.unshift(i);
+  }
+  return rangeArray;
+}
 
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
@@ -22,6 +28,16 @@
 // error, 10    | ERROR!!!!!!!!!!
 //
 // TODO: write code below
+const makeCapsAndAddExclamation = (str,num) => {
+  let capsString = str.toUpperCase();
+  let exclamationString = '';
+  let createString = num => {
+    for (let i=1;i<=num;i++){
+      exclamationString = exclamationString+'!';
+    }   return exclamationString;
+    }; return capsString+createString(num);
+  }
+
 
 // change the exported value to be the name of the function you defined
 module.exports = {
