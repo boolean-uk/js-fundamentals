@@ -9,6 +9,14 @@
 // -1, 1        | [-1, 0, 1]
 //
 // TODO: write code below
+function lowerUpper(array) {
+    for (let i = 0; i < number; i++) {
+        array = array
+    }
+
+    return array
+
+}
 
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
@@ -21,9 +29,19 @@
 // error, 10    | ERROR!!!!!!!!!!
 //
 // TODO: write code below
+function exclamation(string, number) {
+    let upperCaseString = string.toUpperCase()
+    for (let i = 0; i < number; i++) {
+        upperCaseString = upperCaseString + "!"
+    }
+    return upperCaseString
+}
+
+console.log(exclamation('Disaster', 5))
+console.log(exclamation('Error', 10))
 
 // change the exported value to be the name of the function you defined
 module.exports = {
-  a: undefined, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
-  b: undefined // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
+    a: lowerUpper // change undefined to be the name of the function defined to create the range of numbers (the first todo)
+    b: exclamation // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }
