@@ -6,10 +6,10 @@ let word = ''
 // TODO: Add code below this line to make the tests pass
 
 // Use a for loop to set the sum variable to the sum of all the values in nums
-sum = nums
+for(let sum=0; sum==nums, sum++) 
 
 // Use a for loop to populate doubledNums with every value from nums array doubled (i.e [2, 6, 24, etc...])
-const doubledNums = []
+
 
 // Use a for loop to set word equal to all the letters in the letters array
 word = ''
