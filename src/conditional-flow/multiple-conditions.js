@@ -5,6 +5,8 @@ function isInRange (num, lower, upper) {
 
   // TODO: write code in this function body to pass the tests
 
+  const result = num >= lower && num <= upper
+  return result
 }
 
 // This function should return true if the passed string is equal
