@@ -27,8 +27,8 @@ else {
 // This function should return the lowest number in the passed array
 function findLowest (nums) {
   // TODO: write code in this function body to pass the tests
-  let lowNum = nums[i] 
-  for ( let i = 0; i < nums.length; i++) {
+  let lowNum = nums[0]
+  for ( let i = 1; i < nums.length; i++) {
     if (lowNum > nums[i]) {
    lowNum = nums[i] 
     }
