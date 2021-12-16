@@ -14,25 +14,16 @@ function isHello (val1) {
 function isNotHello (val1) {
 
   // TODO: write code in this function body to pass the tests
-  if (val1 !== 'Hello') {
-    return true
+  return !isHello(val1)
   }
-  else {
-    return false
-  }
-}
+
 
 // This function should return true if the string val1 is is longer
 // than string val2
 function isLongerThan (val1, val2) {
 
   // TODO: write code in this function body to pass the tests
-  if (val1.length > val2.length){
-    return true
-  }
-  else{
-    return false
-  }
+return val1.length > val2.length
 }
 
 // This function should return true if the string passed in the function's first
@@ -41,16 +32,16 @@ function isLongerThan (val1, val2) {
 function hasOddNumberVowels (val1) {
 
   // TODO: write code in this function body to pass the tests
-const vowels = ['a', 'e', 'i', 'o', 'u']
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
-  let count = 0
+  let counts = 0
   for (let i = 0; i < val1.length; i++) {
     if (vowels.includes(val1[i])) {
-      count++
+      counts++
     }
   }
-  if (count%10 !== 0) {
-  return true
+  if (counts%2 !== 0) {
+  return true 
 }
 else {
   return false
@@ -63,8 +54,24 @@ else {
 
 function getMiddleLetter (val1) {
   // TODO: write code in this function body to pass the tests
+let position = [];
+let length = '';
+// Bobbie return length 6 - we want 'bb' returned
 
+if (val1.length % 2 ==0) {
+  position =val1.length / 2;
+  // Bobbie 6 / 2 = 3 return strings 2 and 3
+  // Mike 4 / 2 = 2 return string 1 and 2 
+  length =0;
+  return val1[position -1] + val1[position]
 }
+else {
+  position = val1.length / 2 -1;
+  // Kiran 5 / 2 =
+  return val1[Math.ceil(position)]
+}
+}
+
 
 // This function should return the name of the season for the provided
 // month name. For example, "January" should return "Winter". If the provided
@@ -78,6 +85,32 @@ function getMiddleLetter (val1) {
 function seasonForMonth (monthName) {
 
   // TODO: write code in this function body to pass the tests
+  let season =''
+
+
+  switch (monthName) {
+  case "March":
+  case "April":
+  case "May":
+    season = "Spring"
+    break;
+  case "June":
+  case "July":
+  case "August":
+    season = "Summer"
+    break;
+  case "September":
+  case "October":
+  case "November":
+    season = "Autumn"
+    break;
+  case "December":
+  case "January":
+  case "February":
+    season = "Winter"
+    break;  
+}
+return season
 }
 
 module.exports = {

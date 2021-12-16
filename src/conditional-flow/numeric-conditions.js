@@ -26,18 +26,18 @@ if (num1 > num2) {
 function findLowest (nums) {
 
   // TODO: write code in this function body to pass the tests
- // let findLowest = [i];
-  //let
+  let lowNum = nums[0] 
+  for ( let i = 1; i < nums.length; i++) {
+    if (lowNum > nums[i]) {
+   lowNum = nums[i] 
+    }
+  }
+  return lowNum 
 
- // for (let i=1; i<nums.length; i++){
-  //  if(nums[i] < smallest){
-   //   smallest = nums[i];   
-  //  }
-  //}
-
-
-  return Math.min(...nums)
 }
+
+//  return Math.min(...nums)
+
 
 module.exports = {
   a: isArrayEmpty,
