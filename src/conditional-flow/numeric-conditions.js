@@ -29,13 +29,13 @@ function isGreaterThan(num1, num2) {
 function findLowest(nums) {
 
   // TODO: write code in this function body to pass the tests
-  let lowNum = nums;
-  for (i = 0; i < nums.length; i++) {
-    if (nums[i] < lowNum) {
+  let lowNum = nums[0];
+  for (i = 1; i < nums.length; i++) {
+    if (lowNum > nums[i]) {
       lowNum = nums[i]
     }
-    return lowNum
   }
+  return lowNum
 }
 
 module.exports = {

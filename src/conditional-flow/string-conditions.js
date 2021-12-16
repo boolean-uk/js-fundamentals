@@ -45,9 +45,17 @@ function isLongerThan (val1, val2) {
 function hasOddNumberVowels (val1) {
 
   // TODO: write code in this function body to pass the tests
-const vowels = ['a', 'e', 'i', 'o', 'u']
-for ( i = -1; i>vowels.length; i +=2 ){
-  if (vowels[i]
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+let counts = 0 
+for ( let i = 0; i < val1.length; i++) {
+  if (vowels.includes(val1[i])){ counts++ }
+}
+ if ( counts %2 !== 0){
+return true
+}
+else {
+  return false
 }
 }
 
@@ -57,7 +65,18 @@ for ( i = -1; i>vowels.length; i +=2 ){
 
 function getMiddleLetter (val1) {
   // TODO: write code in this function body to pass the tests
+  let position
+  let length 
+if ( val1.length % 2 == 0){
+  position = val1.length/2;
+  
+  return val1[position-1] + val1[position]
+}
+else {
+  position = val1.length / 2 -1;
 
+  return val1[Math.ceil(position)]
+} 
 }
 
 // This function should return the name of the season for the provided
@@ -72,6 +91,30 @@ function getMiddleLetter (val1) {
 function seasonForMonth (monthName) {
 
   // TODO: write code in this function body to pass the tests
+let seasons = ''
+switch (monthName){
+  case 'March':
+  case 'April':
+  case 'May':
+    seasons = 'Spring' 
+    break;
+  case 'June':
+  case 'July':
+  case 'August':
+    seasons = 'Summer'
+    break;
+  case 'September':
+  case 'October':
+  case 'November':
+    seasons = 'Autumn'
+    break;
+  case 'December':
+  case 'January':
+  case 'February':
+    seasons = 'Winter'
+    break;      
+}
+return seasons
 }
 
 module.exports = {
