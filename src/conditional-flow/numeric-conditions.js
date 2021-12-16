@@ -28,8 +28,16 @@ function isGreaterThan(num1, num2) {
 function findLowest(nums) {
 
     // TODO: write code in this function body to pass the tests
-    return Math.min(...nums)
+    //return Math.min(...nums)
+    let lowNum = nums[0]
+    for (let i = 1; i < nums.length; i++) {
+        if (lowNum > nums[i]) {
+            lowNum = nums[i]
+        }
+    }
+    return lowNum
 }
+
 
 module.exports = {
     a: isArrayEmpty,
