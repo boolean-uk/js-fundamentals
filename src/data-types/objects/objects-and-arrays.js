@@ -21,7 +21,7 @@ const basket = {
 // TODO: write code in this section to pass the tests. You will need to add new code
 // as well as modify some of the existing code
 
-basket.items.0.price=2
+basket.items[0].price=2
 
 basket.items.push ({
   name:'Oranges',
