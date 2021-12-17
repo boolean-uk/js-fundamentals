@@ -37,21 +37,24 @@ function isLongerThan(val1, val2) {
 
 function hasOddNumberVowels(val1) {
   // TODO: write code in this function body to pass the tests
-  const numVowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  const numVowels = ["a", "e", "i", "o", "u"];
+  let lowerVal1 = val1.toLowerCase()
   let count = 0;
 
-  for (let i = 0; i < val1.length; i++) {
-    if (numVowels.includes(val1[i])) {
+  for (let i = 0; i < lowerVal1.length; i++) {
+    if (numVowels.includes(lowerVal1[i])) {
       count++;
     }
   }
-  if (count % 2 == 1) {
-    return true;
-  } else if (count % 2 == 0) {
-    return false;
-  }
-  return (count = 0);
+  return count % 2 !== 0
+  // if (count % 2 == 1) {
+  //   return true;
+  // } else if (count % 2 == 0) {
+  //   return false;
+  // }
+  // return (count = 0);
 }
+
 // this function should return the middle character of a string if it has an odd number
 // of characters. If there are an even number of characters the function should return
 // the middle two letters
@@ -101,3 +104,6 @@ module.exports = {
   e: getMiddleLetter,
   f: seasonForMonth,
 };
+
+
+
