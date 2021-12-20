@@ -101,4 +101,3 @@ describe('String conditions seasonForMonth:', () => {
     expect(f('Marchprilvember')).toEqual('')
   })
 })
-
