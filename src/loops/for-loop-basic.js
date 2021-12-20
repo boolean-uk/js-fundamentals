@@ -1,4 +1,4 @@
-const numsZeroToThree = [0, 1, 2, 3]
+const numsZeroToThree = []
 const numsFiveToTen = [5, 6, 7, 8, 9, 10]
 const evenNums = [0, 2, 4, 6]
 const countdown = [3, 2, 1, 0]
@@ -13,7 +13,7 @@ console.log(i)
 for (let i=0; i>evenNums; i+=2)
 console.log(i)
 // TODO: Write a for loop that adds the numbers 3 to 0 (in that order) to the countdown array
-for (let i=3; i<countdown; i--)
+for (let i=3; i>=0; i--)
 console.log(i)
 // do not change below this line
 module.exports = {
