@@ -5,9 +5,13 @@ const person = {
   age: 32
 }
 const computer = {
-  form: 'laptop'
-  memory: '16GB'
-  storage: '1TB'
+  form: 'laptop',
+
+  specs: {
+    memory: '16GB',
+    storage: '1TB'
+  }
+
 }
 // Do not edit this exported object
 module.exports = {

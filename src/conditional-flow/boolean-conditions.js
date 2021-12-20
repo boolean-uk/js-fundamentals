@@ -3,7 +3,7 @@
 // if the value is false.
 function getResult(didPass) {
   // TODO: write code in this function body to pass the tests
-  return didPass === true ? 'Well done, you passed!' : 'Sorry try again'
+  return didPass === true ? 'Well done, you passed!' : 'Sorry, try again'
 }
 
 module.exports = {
