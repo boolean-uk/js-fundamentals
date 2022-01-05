@@ -10,25 +10,25 @@ const fruits = ['Apple', 'Orange', 'Pear']
 // TODO: write code to pass the tests
 
 // Edit this code to add 'Fred' to the names array
-names.push('Fred');
+names.push(undefined)
 
 // Edit this code to add 4 to the end of the numbers array
-numbers.push(4);
+numbers.push(NaN)
 
 // Edit this code to add 'Rio' to the start of the cities array
-cities.unshift('Rio');
+cities.unshift(undefined)
 
 // Use an array method to remove the first item from colours
-colours.shift();
+colours
 
 // Use an array method to remove the last item from keys
-keys.pop();
+keys
 
 // Use an array method to remove 'Jordon' from the countries array
-countries.splice(1, 1);
+countries.splice(NaN, NaN)
 
 // use an array method to remove the last item from the fruits array and store the value in the pear variable
-const pear = fruits.pop();
+const pear = fruits.undefined
 
 // Do not edit this exported object
 module.exports = {
