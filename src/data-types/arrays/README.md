@@ -1,7 +1,7 @@
 # Arrays
 Variables allow us to store a single value. An `age` variable is a single number, a `name` variable is a single string. But what if we wanted to have not one, but several names stored for later? Or what if we wanted to store a list of tweets or a list of items in a shopping cart?
 
-**Arrays** allow us to do this. Array's are a single data type used to represent a list of things. 
+**Arrays** allow us to do this. Arrays are a single data type used to represent a list of things. 
 
 > 👨‍💻 Run these examples in your REPL as you read along! 👨‍💻
 
