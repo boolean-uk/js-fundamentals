@@ -2,7 +2,7 @@
 //
 //
 // TODO: Declare the variables firstName and age so that the tests pass
-let firstName = Jane
+let firstName = 'Jane'
 const age = 35
 
 // do not edit below this line
