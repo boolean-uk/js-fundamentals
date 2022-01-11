@@ -1,32 +1,47 @@
 // This function should return true if the passed string is equal to "Hello"
 function isHello (val1) {
-
-  // TODO: write code in this function body to pass the tests
-
+// TODO: write code in this function body to pass the tests
+  if (val1 === 'Hello') {
+    return true
+  } else {
+    return false
+  }
 }
 
 // This function should return true if the passed string is not equal to "Hello"
 function isNotHello (val1) {
-
-  // TODO: write code in this function body to pass the tests
-
+// TODO: write code in this function body to pass the tests
+  if (val1 !== 'Hello') {
+    return true
+  } else {
+    return false
+  }
 }
 
 // This function should return true if the string val1 is is longer
 // than string val2
 function isLongerThan (val1, val2) {
-
   // TODO: write code in this function body to pass the tests
-
+  if (val1.length > val2.length) {
+    return true
+  } else {
+    return false
+  }
 }
 
 // This function should return true if the string passed in the function's first
 // argument has an odd number of vowels
 
 function hasOddNumberVowels (val1) {
-
-  // TODO: write code in this function body to pass the tests
-
+// TODO: write code in this function body to pass the tests
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  let countVowels = 0
+  for (i = 0; i < val1.length; i++) {
+    if (vowels.includes(val1[i])) {
+      ++countVowels
+    }
+  }
+  return countVowels % 2 !== 0
 }
 
 // this function should return the middle character of a string if it has an odd number
