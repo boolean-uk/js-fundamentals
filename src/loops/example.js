@@ -8,7 +8,7 @@ for (let i = 1; i < 6; i++) {
   nums.push(i)
 }
 
-// TODO: Write a for loop to add the all but the last number of nums to the nums2 array
+// TODO: Write a for loop to add all but the last number of nums2 to the nums3 array
 for (let i = 0; i < nums2.length - 1; i++) {
   nums3.push(nums2[i])
 }

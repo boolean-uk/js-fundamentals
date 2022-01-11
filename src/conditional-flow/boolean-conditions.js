@@ -2,9 +2,14 @@
 // "Well done, you passed!" if the value is true, or "Sorry, try again"
 // if the value is false.
 function getResult (didPass) {
-
-  // TODO: write code in this function body to pass the tests
-
+// TODO: write code in this function body to pass the tests
+  result = ''
+  if (didPass) {
+    didPass = 'Well done, you passed!'
+  } else {
+    didPass = 'Sorry, try again'
+  }
+  return didPass
 }
 
 module.exports = {
