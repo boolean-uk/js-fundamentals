@@ -26,7 +26,7 @@ for (let k = 0; k < letters.length; k++) {
 // Use a for loop to populate everySecondNum with every second number from the nums array
 const everySecondNum = (arr) => {
   const secondArr = []
-  for (let l = 1; l < arr.length; l + 2) {
+  for (let l = 1; l < arr.length; l += 2) {
     secondArr.push(arr[l])
   }
   return secondArr
@@ -35,9 +35,10 @@ const everySecondNum = (arr) => {
 // Use a for loop to populate numsReversed with the numbers from nums in reverse order
 const numsReversed = (arr) => {
   const reversedArr = []
-  for (let m = arr.length - 1; m <= 0; m--) {
+  for (let m = arr.length - 1; m >= 0; m--) {
     reversedArr.push(arr[m])
   }
+  return reversedArr
 }
 
 // do not change below this line

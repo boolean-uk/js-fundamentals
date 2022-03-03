@@ -1,4 +1,4 @@
-const { a, b, c,d } = require('../../src/loops/for-loop-basic.js')
+const { a, b, c, d } = require('../../src/loops/for-loop-basic.js')
 
 describe('For Loop Basic:', () => {
   it('numsZeroToThree should contain numbers zero to three', () => {
