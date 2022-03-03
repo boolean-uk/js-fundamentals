@@ -4,12 +4,17 @@ const basket = {
     {
       name: 'Apple',
       quantity: 10,
-      price: 1
+      price: 2
     },
     {
       name: 'Lemon',
       quantity: 2,
       price: 0.5
+    },
+    {
+      name: 'Oranges',
+      price: 0.75,
+      quantity: 4
     }
   ],
   voucherCodes: [
