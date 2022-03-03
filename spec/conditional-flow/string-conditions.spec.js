@@ -1,62 +1,62 @@
 const { a, b, c, d, e, f } = require('../../src/conditional-flow/string-conditions')
 
-describe("String Conditions isHello:", () => {
+describe('String Conditions isHello:', () => {
   it("Returns false with 'goodbye'", () => {
-    expect(a("goodbye")).toEqual(false)
+    expect(a('goodbye')).toEqual(false)
   })
   it("Returns true with 'Hello'", () => {
-    expect(a("Hello")).toEqual(true)
+    expect(a('Hello')).toEqual(true)
   })
 })
 
-describe("String Conditions isNotHello:", () => {
+describe('String Conditions isNotHello:', () => {
   it("Returns true with 'goodbye'", () => {
-    expect(b("goodbye")).toEqual(true)
+    expect(b('goodbye')).toEqual(true)
   })
   it("Returns false with 'Hello'", () => {
-    expect(b("Hello")).toEqual(false)
+    expect(b('Hello')).toEqual(false)
   })
 })
 
-describe("String Conditions isLongerThan:", () => {
+describe('String Conditions isLongerThan:', () => {
   it("'Mike' is longer than 'Ed'", () => {
-    expect(c("Mike", "Ed")).toEqual(true)
+    expect(c('Mike', 'Ed')).toEqual(true)
   })
   it("'Mike' is not longer than 'Lewis'", () => {
-    expect(c("Mike", "Lewis")).toEqual(false)
+    expect(c('Mike', 'Lewis')).toEqual(false)
   })
   it("'Mike' is not longer than 'Mike'", () => {
-    expect(c("Mike", "Mike")).toEqual(false)
+    expect(c('Mike', 'Mike')).toEqual(false)
   })
 })
 
-describe("String Conditions hasOddNumberVowels:", () => {
+describe('String Conditions hasOddNumberVowels:', () => {
   it("'Alex' does not have odd number vowels", () => {
-    expect(d("Alex")).toEqual(false)
+    expect(d('Alex')).toEqual(false)
   })
   it("'Mo' does have odd number vowels", () => {
-    expect(d("Mo")).toEqual(true)
+    expect(d('Mo')).toEqual(true)
   })
   it("'Joanna' does have odd number vowels", () => {
-    expect(d("Joanna")).toEqual(true)
+    expect(d('Joanna')).toEqual(true)
   })
   it("'Maggie Smith' does not have odd number vowels", () => {
-    expect(d("Maggie Smith")).toEqual(false)
+    expect(d('Maggie Smith')).toEqual(false)
   })
 })
 
-describe("String conditions getMiddleLetter:", () => {
+describe('String conditions getMiddleLetter:', () => {
   it("'Alex' returns 'le'", () => {
-    expect(e("Alex")).toEqual('le')
+    expect(e('Alex')).toEqual('le')
   })
   it("'Edward' returns 'wa'", () => {
-    expect(e("Edward")).toEqual('wa')
+    expect(e('Edward')).toEqual('wa')
   })
   it("'Kayla' returns 'y'", () => {
-    expect(e("Kayla")).toEqual('y')
+    expect(e('Kayla')).toEqual('y')
   })
   it("'Tom' returns 'o'", () => {
-    expect(e("Tom")).toEqual('o')
+    expect(e('Tom')).toEqual('o')
   })
 })
 
@@ -101,4 +101,3 @@ describe('String conditions seasonForMonth:', () => {
     expect(f('Marchprilvember')).toEqual('')
   })
 })
-
