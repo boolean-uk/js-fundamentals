@@ -22,13 +22,13 @@ cities.unshift("Rio")
 colours.shift("Red")
 
 // Use an array method to remove the last item from keys
-keys.pop("y")
+keys.pop()
 
 // Use an array method to remove 'Jordon' from the countries array
 countries.splice(1,1)
 
 // use an array method to remove the last item from the fruits array and store the value in the pear variable
-const pear = fruits.pop("Pear")
+const pear = fruits.pop()
 
 // Do not edit this exported object
 module.exports = {
