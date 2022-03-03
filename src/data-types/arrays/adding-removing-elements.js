@@ -24,7 +24,7 @@ colours.shift()
 // Use an array method to remove the last item from keys
 keys.pop()
 
-// Use an array method to remove 'Jordon' from the countries array
+// Use an array method to remove 'Jordan' from the countries array
 countries.splice(countries.indexOf('Jordan'), 1)
 
 // use an array method to remove the last item from the fruits array and store the value in the pear variable
