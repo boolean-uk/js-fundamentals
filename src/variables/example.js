@@ -7,7 +7,7 @@ count = 100
 const city = 'Tokyo'
 
 // do not edit below this line
-let cityExport = ''
+let cityExport = city
 try { cityExport = city } catch (e) {}
 
 module.exports = {
