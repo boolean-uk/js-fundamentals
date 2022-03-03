@@ -12,6 +12,8 @@ const upperCaseHello = hello.toUpperCase()
 const secondCharacterOfDog = animal.charAt(1)
 const howManyVowels = vowels.length
 
+
+
 // TODO: Update the code below using numeric operators so that the tests
 // pass
 const numOneMultipliedByNumTwo = numOne * numTwo
@@ -23,3 +25,4 @@ module.exports = {
   c: howManyVowels,
   d: numOneMultipliedByNumTwo
 }
+
