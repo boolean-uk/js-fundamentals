@@ -24,9 +24,12 @@ function increment(num) {
 // TODO: write code below
 
 // TODO: change undefined to be the name of the functions you defined
-
+function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1).toLowerCase();
+}
 function smileToPerson(name) {
-  return `Hi, ${name} :)`
+
+  return `Hi, ${capitalize(name)} :)`
 }
 module.exports = {
   a: increment, // change undefined to be the name of the function you defined to increment a number (the first TODO)
