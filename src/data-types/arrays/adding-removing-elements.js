@@ -30,6 +30,8 @@ countries.splice(1, 1)
 // use an array method to remove the last item from the fruits array and store the value in the pear variable
 const pear = fruits.pop()
 
+fruits.splice(2, 1)
+
 // Do not edit this exported object
 module.exports = {
   a: names,
@@ -38,6 +40,6 @@ module.exports = {
   d: colours,
   e: keys,
   f: countries,
-  // g: fruits,
+  g: fruits,
   h: pear
 }

@@ -25,9 +25,9 @@ describe('Arrays adding and removing:', () => {
     expect(answers.f).toEqual(['Bolivia', 'Greenland'])
   })
 
-  // it('Pear is removed from fruits', () => {
-  //   expect(answers.g).toEqual(['Apple', 'Orange'])
-  // })
+  it('Pear is removed from fruits', () => {
+    expect(answers.g).toEqual(['Apple', 'Orange'])
+  })
 
   it('The removed item from fruits is stored in the pear variable', () => {
     expect(answers.h).toEqual('Pear')
