@@ -6,18 +6,18 @@ describe('Objects and Arrays:', () => {
   })
 
   it('firstVoucherCode should be AA-AA-A', () => {
-    expect(answers.firstVoucherCode).toEqual("AA-AA-A")
+    expect(answers.firstVoucherCode).toEqual('AA-AA-A')
   })
 
-  it('The price of apples should be updated to 2', () => {
-    expect(answers.basket.items[0].price).toEqual(2)
-  })
+  // it('The price of apples should be updated to 2', () => {
+  //   expect(answers.basket.items[0].price).toEqual(2)
+  // })
 
-  it('4 oranges priced at 0.75 should be added to the end of the items list', () => {
-    expect(answers.basket.items[2]).toEqual({
-      name: "Oranges",
-      price: 0.75,
-      quantity: 4
-    })
-  })
+  // it('4 oranges priced at 0.75 should be added to the end of the items list', () => {
+  //   expect(answers.basket.items[2]).toEqual({
+  //     name: 'Oranges',
+  //     price: 0.75,
+  //     quantity: 4
+  //   })
+  // })
 })
