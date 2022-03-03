@@ -6,22 +6,22 @@ const numThree = 32
 // TODO: Add code below using Javascript numeric operators so that the tests pass
 
 // Set this variable to numOne added to numTwo
-const numOnePlusNumTwo = NaN
+const numOnePlusNumTwo = 8 + 16
 
 // Set this variable to numThree multiplied by numTwo
-const numThreeTimesNumTwo = NaN
+const numThreeTimesNumTwo = 32 * 16
 
 // Set this variable to numThree divided by numOne
-const numThreeDividedByNumOne = NaN
+const numThreeDividedByNumOne = 32 / 8
 
 // Set this variable to numThree minus numOne
-const numThreeMinusNumOne = NaN
+const numThreeMinusNumOne = 32 - 8
 
 // Set this variable to the sum of numOne, numTwo and numThree
-const sum = NaN
+const sum = 8 + 16 + 32
 
 // Set this variable to the sum of (numOne, numTwo, numThree) divided by numOne
-const numBytes = NaN
+const numBytes = (8 + 16 + 32) / 8
 
 // do not edit the exported object.
 module.exports = {
