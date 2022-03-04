@@ -18,10 +18,10 @@ function isLongerThan (val1, val2) {
 // argument has an odd number of vowels
 
 function hasOddNumberVowels (val1) {
-  const vowels = ['a', 'e', 'i', 'o', 'u']
+  const VOWELS = ['a', 'e', 'i', 'o', 'u']
   let total = 0
   for (let i = 0; i < val1.length; i++) {
-    if (vowels.includes(val1[i].toLowerCase())) {
+    if (VOWELS.includes(val1[i].toLowerCase())) {
       total++
     }
   }

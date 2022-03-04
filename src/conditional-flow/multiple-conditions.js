@@ -8,8 +8,15 @@ function isInRange (num, lower, upper) {
 // This function should return true if the passed string is equal
 // to "Hello" or "Goodbye". Implement this with a single
 // if statement.
+
+// function isHelloOrGoodbye (val1) {
+//   return (val1 === 'Hello' || val1 === 'Goodbye')
+// }
 function isHelloOrGoodbye (val1) {
-  return (val1 === 'Hello' || val1 === 'Goodbye')
+  if (val1 === 'Hello' || val1 === 'Goodbye') {
+    return true
+  }
+  return false
 }
 
 // This function should return a string that describes the provided age value. The
