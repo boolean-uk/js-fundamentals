@@ -8,6 +8,10 @@
 //
 // TODO: write code below
 
+function incrementNumber (num) {
+  return num + 1
+}
+
 // Define a function that takes any person's name and returns it with a smiley :)!
 // Remember to make the name capitalized!
 //
