@@ -7,7 +7,9 @@
 // 2      | 3
 //
 // TODO: write code below
-
+function incrementer (a){
+  return a + 1
+}
 // Define a function that takes any person's name and returns it with a smiley :)!
 // Remember to make the name capitalized!
 //
@@ -19,8 +21,13 @@
 //
 // TODO: write code below
 
+const hi = function (name) {
+  const str = `Hi, ${name} :)`
+  return str.slice(0,4) + str.charAt(4).toUpperCase() + str.slice(5);
+}
+
 // TODO: change undefined to be the name of the functions you defined
 module.exports = {
-  a: undefined, // change undefined to be the name of the function you defined to increment a number (the first TODO)
-  b: undefined // change undefined to be the name of the function you defined to say hi (the second TODO)
+  a: incrementer, // change undefined to be the name of the function you defined to increment a number (the first TODO)
+  b: hi // change undefined to be the name of the function you defined to say hi (the second TODO)
 }
