@@ -8,8 +8,8 @@
 //
 // TODO: write code below
 
-function incrementNumber (num) {
-  return num + 1
+function increment(number) {
+  return number + 1;
 }
 
 // Define a function that takes any person's name and returns it with a smiley :)!
@@ -23,8 +23,13 @@ function incrementNumber (num) {
 //
 // TODO: write code below
 
+function nameWithSmile (name) {
+  return "Hi, " + name[0].toUpperCase() + name.slice(1) + " :)"
+}
+
+
 // TODO: change undefined to be the name of the functions you defined
 module.exports = {
-  a: undefined, // change undefined to be the name of the function you defined to increment a number (the first TODO)
-  b: undefined // change undefined to be the name of the function you defined to say hi (the second TODO)
+  a: increment, // change undefined to be the name of the function you defined to increment a number (the first TODO)
+  b: nameWithSmile // change undefined to be the name of the function you defined to say hi (the second TODO)
 }
