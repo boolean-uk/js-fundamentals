@@ -55,7 +55,7 @@ function getMiddleLetter (val1) {
 // Autumn - September to November
 // Winter - December to February
 function seasonForMonth (monthName) {
-  let season = ""
+  // let season = ""
   switch (monthName) {
     case 'March':
     case 'April':
@@ -77,6 +77,8 @@ function seasonForMonth (monthName) {
     case 'February':
       season = "Winter";
       break;
+    default:
+      season = "";
   }
   return season
 }
