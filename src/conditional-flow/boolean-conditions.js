@@ -5,9 +5,7 @@ function getResult (didPass) {
   if (didPass) {
     return "Well done, you passed!"
   }
-  else {
-    return "Sorry, try again"
-  }
+  return "Sorry, try again"
 }
 
 module.exports = {
