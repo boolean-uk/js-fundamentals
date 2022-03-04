@@ -17,10 +17,31 @@ const isbn13 = '978-0132350884'
 // as well as modify some of the existing code
 
 // Set this to the book name
-const name = ''
+const name = book['name']
 
 // Set this to the isbn 10 value
-const isbn10 = ''
+const isbn10 = book['isbn']['isbn10']
+
+
+//Book category should be Programming
+book['category'] = 'Programming'
+
+
+//Book pages should be 464
+
+book['pages'] = 464;
+
+//Book ISBN 13 should be 978-0132350884
+
+book.isbn['isbn13'] = isbn13
+
+//Book should not contain the dimensions key - it should be deleted
+
+delete book.dimensions
+
+//Book should not contain the asin key - it should be deleted
+
+delete book['isbn']['asin']
 
 // Do not edit this exported object
 module.exports = {
