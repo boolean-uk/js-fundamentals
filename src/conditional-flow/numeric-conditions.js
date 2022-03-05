@@ -29,16 +29,19 @@ function isGreaterThan (num1, num2) {
 
 
 // This function should return the lowest number in the passed array
+
+
 function findLowest (nums) {
-  for (i=0; i=nums.length; i++){
-    if (i<0){
-      return i;
+  let smallest = nums[0]
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] < smallest) {
+      smallest = nums[i]
     }
-  
-  }
-
-
+ }
+ return smallest
 }
+
+
 
   // TODO: write code in this function body to pass the tests
 
