@@ -17,12 +17,11 @@ function isInRange (num, lower, upper) {
 // to "Hello" or "Goodbye". Implement this with a single
 // if statement.
 function isHelloOrGoodbye (val1) {
-  if (val1="Hello" || "Goodbye"){
-    return true;
-  }
-  else {
-    return false;
-  }
+ if (val1 === "Hello" || val1 === "Goodbye") {
+   return true
+ }
+ return false
+
 }
   // TODO: write code in this function body to pass the tests
 
@@ -42,13 +41,13 @@ function isHelloOrGoodbye (val1) {
 // 20+    | Adult
 
 function getAgeDescription (age) {
-  if (age = 0) {
+  if (age === 0) {
     return "Baby"
   }
   else if (age >= 1 && age <= 4) {
     return "Toddler"
   }
-  else if (age > 5 && age < 13) {
+  else if (age >= 5 && age <=12) {
     return "Child"
   }
   else if (age > 12 && age < 20) {
