@@ -30,10 +30,15 @@ function lowerUpper (lower, upper){
 //
 // TODO: write code below
 
-function myFunction (string, number) {
-  return string.toUpperCase() + number*"!" 
-}
 
+function myFunction (word, number) {
+  const wordPart = word.toUpperCase()
+  const exclamationPart = []
+  for (i = 0; i < number; i++) {
+    exclamationPart.push("!")
+  }
+return wordPart + exclamationPart.join("")
+}
 
 
 // change the exported value to be the name of the function you defined
