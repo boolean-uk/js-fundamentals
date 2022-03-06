@@ -10,6 +10,13 @@
 //
 // TODO: write code below
 
+const createArray = (lower, upper) => {
+  const output = []
+  for (let i = lower; i <= upper; i++) {
+    output.push(i)
+  } return output
+}
+
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
 // marks appended to the end. The number of exclamation marks should be
@@ -21,6 +28,14 @@
 // error, 10    | ERROR!!!!!!!!!!
 //
 // TODO: write code below
+
+const toUpperCase = (word, num) => {
+  const exclamationMark = []
+  for (i = 0; i < num; i++) {
+    exclamationMark.push('!')
+  }
+  return word.toUpperCase() + exclamationMark.join('')
+}
 
 // change the exported value to be the name of the function you defined
 module.exports = {
