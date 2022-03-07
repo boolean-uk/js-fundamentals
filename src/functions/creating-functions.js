@@ -8,6 +8,10 @@
 //
 // TODO: write code below
 
+function increment(num) {
+  return num + 1;
+}
+
 // Define a function that takes any person's name and returns it with a smiley :)!
 // Remember to make the name capitalized!
 //
@@ -20,7 +24,14 @@
 // TODO: write code below
 
 // TODO: change undefined to be the name of the functions you defined
+function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1).toLowerCase();
+}
+function smileToPerson(name) {
+
+  return `Hi, ${capitalize(name)} :)`
+}
 module.exports = {
-  a: undefined, // change undefined to be the name of the function you defined to increment a number (the first TODO)
-  b: undefined // change undefined to be the name of the function you defined to say hi (the second TODO)
+  a: increment, // change undefined to be the name of the function you defined to increment a number (the first TODO)
+  b: smileToPerson // change undefined to be the name of the function you defined to say hi (the second TODO)
 }
