@@ -25,6 +25,7 @@ function isNotHello (val1) {
 
 // This function should return true if the string val1 is is longer
 // than string val2
+
 function isLongerThan (val1, val2) {
   if (val1.length > val2.length) {
     return true
@@ -32,6 +33,7 @@ function isLongerThan (val1, val2) {
   else {
     return false
   }
+
 
   // TODO: write code in this function body to pass the tests
 
@@ -41,15 +43,21 @@ function isLongerThan (val1, val2) {
 // argument has an odd number of vowels
 
 function hasOddNumberVowels (val1) {
-  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
-  const vowelsInString = []
-  for (i=0; i<val1.length; i++){
-    if (i=vowels){
-      vowelsInString.push()
+  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  let vowelsInString = 0;
+  for (let i=0; i<val1.length; i++){
+    if (vowels.includes(val1[i])) {
+      vowelsInString++
     }
   }
- 
+  return Boolean(vowelsInString % 2);
 }
+
+  
+
+
+
+    
   // TODO: write code in this function body to pass the tests
 
 
@@ -59,26 +67,21 @@ function hasOddNumberVowels (val1) {
 // the middle two letters
 
 function getMiddleLetter (val1) {
-  // TODO: write code in this function body to pass the tests
-}
-
-function extractMiddle(str) {
-
-  var position;
-  var length;
-
-  if(str.length() % 2 == 1) {
-      position = str.length() / 2;
-      length = 1;
-  } else {
-      position = str.length() / 2 - 1;
-      length = 2;
+  if (val1.length % 2 === 1) {
+    let half = val1.length / 2;
+    let mid = Math.floor(half);
+    return val1[mid];
   }
-
-  result = str.substring(position, position + length)
-
+  if (val1.length % 2 === 0) {
+    let middleTwo = val1.length / 2;
+    let middleOne = middleTwo - 1;
+    return  val1[middleOne] + val1[middleTwo];
+}
 }
 
+ 
+
+ // TODO: write code in this function body to pass the tests
 
 // This function should return the name of the season for the provided
 // month name. For example, "January" should return "Winter". If the provided
@@ -89,29 +92,38 @@ function extractMiddle(str) {
 // Summer - June to August
 // Autumn - September to November
 // Winter - December to February
-function seasonForMonth (monthName) {
-  const spring = [March, Arpil, May]
-  const summer = [June, July, August]
-  const autumn = [September, October, November]
-  const winter = [December, January, February]
-  if (monthName === spring) {
-    return "Spring"
-  }
-  else if (monthName === summer) {
-    return "Summer"
-  }
-  else if (monthName === autumn) {
-    return "Autumn"
-  }
-  else if (monthName === winter){
-    return "Winter"
-  }
-  else {
-    return ""
-  }
 
-  // TODO: write code in this function body to pass the tests
+function seasonForMonth (monthName) {
+  switch (monthName) {
+    case "March":
+    case "April":
+    case "May":
+      season = "Spring"
+      break;
+    case "June":
+    case "July":
+    case "August":
+      season = "Summer"
+      break;
+    case "September":
+    case "October":
+    case "November":
+      season = "Autumn"
+      break;
+    case "December":
+    case "January":
+    case "February":
+      season = "Winter"
+      break;
+    default:
+      season = ""
+  }
+  return season;
 }
+
+
+  
+  // TODO: write code in this function body to pass the tests
 
 module.exports = {
   a: isHello,

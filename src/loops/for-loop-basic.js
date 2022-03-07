@@ -24,6 +24,7 @@ for (let i=0; i<7; i++) {
 // TODO: Write a for loop that adds the numbers 3 to 0 (in that order) to the countdown array
 for (let i=3; i>=0; i--) {
   countdown.push(i)
+  console.log(countdown);
 }
 
 
