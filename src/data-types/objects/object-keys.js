@@ -17,10 +17,10 @@ const isbn13 = '978-0132350884'
 // as well as modify some of the existing code
 
 // Set this to the book name
-const name = 'Clean Code'
+const name = book.name
 
 // Set this to the isbn 10 value
-const isbn10 = '9780132350884'
+const isbn10 = book.isbn.isbn10
 
 book["category"] = "Programming"
 
