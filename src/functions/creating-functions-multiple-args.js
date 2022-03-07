@@ -11,8 +11,9 @@
 // TODO: write code below
 function createArray(lower, upper) {
   let anArray = []
-  for (let i = lower; i <= upper; i++)
-  anArray.push(i)
+  for (let i = lower; i <= upper; i++) {
+    anArray.push(i)
+  }
   return anArray
 }
 
