@@ -5,6 +5,10 @@ function isArrayEmpty (array) {
 
   // TODO: write code in this function body to pass the tests
 
+  if (isArrayEmpty[] === true
+  else === false
+
+  ) 
 }
 
 // This function should return true if num1 is greater than num2, false otherwise
