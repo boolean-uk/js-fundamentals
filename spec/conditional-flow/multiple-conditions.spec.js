@@ -30,7 +30,7 @@ describe('Multiple Conditions isHelloOrGoodbye:', () => {
 })
 describe('Multiple Conditions getAgeDescription:', () => {
   it('0 is a Baby', () => {
-    expect(c(0)).toEqual('Baby'å)
+    expect(c(0)).toEqual('Baby')
   })
   it('1-4 is a Toddler', () => {
     expect(c(1)).toEqual('Toddler')
