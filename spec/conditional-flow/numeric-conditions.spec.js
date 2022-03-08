@@ -1,4 +1,4 @@
-const { a, b, c } = require('../../src/conditional-flow/numeric-conditions')
+const { a, b, c } = require('../../src/conditional-flow/numeric-conditions.js')
 
 describe('Numeric Conditions isArrayEmpty:', () => {
   it('[] is empty', () => {
