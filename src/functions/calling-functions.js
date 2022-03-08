@@ -22,10 +22,12 @@ function sayHelloManyTimes (name, times) {
 const hello = sayHello ()
 
 // Set this variable variable to 'Hello Jane' calling the sayHelloTo function
-const helloToJane = sayHelloTo (Jane)
+let jane = "Jane";
+const helloToJane = sayHelloTo (jane)
 
 // Set this variable to 'Hello Bob! Hello Bob! Hello Bob!' calling the sayHelloManyTimes function
-const helloToBob3Times = sayHelloManyTimes (Bob, 3)
+let bob = "Bob";
+const helloToBob3Times = sayHelloManyTimes (bob, 3)
 
 // do not edit below this line
 module.exports = {
