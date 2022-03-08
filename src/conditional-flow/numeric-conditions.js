@@ -31,16 +31,9 @@ function isGreaterThan (num1, num2) {
 function findLowest (nums) {
 
   // TODO: write code in this function body to pass the tests
-  for (i = 0; i < nums.length; i++){
-    if (nums[i]<nums[i+1]){
-    nums.push(nums[i])
-    }
-    else {
-    nums.push(nums[i+1])
-    }
-  }
-  return nums
-  console.log(nums)
+  lowestNum = Math.min(...nums);
+  
+  return lowestNum;
 }
 
 module.exports = {
