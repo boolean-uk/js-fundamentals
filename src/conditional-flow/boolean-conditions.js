@@ -9,7 +9,7 @@ function getResult (didPass) {
   }
   return "Sorry, try again"
 }
-
+// if well done phrase is not displayed then it assume you did not pass and display try again
 module.exports = {
   a: getResult
 }
