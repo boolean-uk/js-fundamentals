@@ -1,7 +1,15 @@
 // This function should return true if num is greater
 // than or equal to lower AND less than or equal to upper.
 // Implement this with a single condition.
+
+// inputs => outputs
+//       (4, 1, 6)) => (true)
+  
+//     (10, 1, 5)) => (false)
+
+
 function isInRange (num, lower, upper) {
+return num >= lower && num <= upper
 
   // TODO: write code in this function body to pass the tests
 
@@ -10,8 +18,18 @@ function isInRange (num, lower, upper) {
 // This function should return true if the passed string is equal
 // to "Hello" or "Goodbye". Implement this with a single
 // if statement.
-function isHelloOrGoodbye (val1) {
 
+// "hello" => true 
+// "goodbye" => true 
+// "edward" => false 
+
+function isHelloOrGoodbye (val1) {
+if () {
+val1 === "Hello" || val1 === "Goodbye" {
+  return tr
+}
+
+}
   // TODO: write code in this function body to pass the tests
 
 }
