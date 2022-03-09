@@ -4,21 +4,22 @@
 function isArrayEmpty (array) {
 
   // TODO: write code in this function body to pass the tests
-
+ return (array.length === 0 ? true : false);
 }
 
 // This function should return true if num1 is greater than num2, false otherwise
 function isGreaterThan (num1, num2) {
 
   // TODO: write code in this function body to pass the tests
-
+  return (num1 > num2 ? true : false);
 }
 
 // This function should return the lowest number in the passed array
 function findLowest (nums) {
 
   // TODO: write code in this function body to pass the tests
-
+  numLowest = Math.min(...nums)
+  return numLowest
 }
 
 module.exports = {

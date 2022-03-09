@@ -9,3 +9,6 @@ describe("Variable Assignment:", () => {
     expect(b).toEqual(42)
   })
 })
+
+//jasmine is for unit testing 
+// it() is the spec 

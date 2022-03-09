@@ -10,6 +10,14 @@
 //
 // TODO: write code below
 
+const  arrayMaker = function (lower, upper){
+const numsArray = []
+ for (let i=lower; i <= upper; i++){
+ numsArray.push(i)
+ }
+ return numsArray
+}
+
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
 // marks appended to the end. The number of exclamation marks should be
@@ -22,8 +30,20 @@
 //
 // TODO: write code below
 
+const alert = function (str, num){
+
+  stringUpper = str.toUpperCase();
+
+   for (let i = 0; i < num; i++){
+     stringUpper += '!';
+   }
+
+   return stringUpper;
+  }
+  
+
 // change the exported value to be the name of the function you defined
 module.exports = {
-  a: undefined, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
-  b: undefined // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
+  a: arrayMaker, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
+  b: alert // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }
