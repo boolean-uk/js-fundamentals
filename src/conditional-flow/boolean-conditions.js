@@ -4,7 +4,8 @@
 function getResult (didPass) {
 
   // TODO: write code in this function body to pass the tests
-
+if (true) alert('Well done, you passed!')
+if (false) alert('Sorry, try again')
 }
 
 module.exports = {
