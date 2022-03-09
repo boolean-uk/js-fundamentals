@@ -19,10 +19,10 @@ numbers.push(4)
 cities.unshift("rio")
 
 // Use an array method to remove the first item from colours
-colours.shift
+colours.shift()
 
 // Use an array method to remove the last item from keys
-keys.pop
+keys.pop()
 
 // Use an array method to remove 'Jordon' from the countries array
 countries.splice(1,1)
