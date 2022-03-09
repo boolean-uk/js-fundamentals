@@ -42,7 +42,7 @@ let outputmessage = string.toUpperCase()
  
   return outputmessage;
 }
-
+{}
 // change the exported value to be the name of the function you defined
 module.exports = {
   a: range, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
