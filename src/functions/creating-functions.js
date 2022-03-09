@@ -9,9 +9,8 @@
 // TODO: write code below
 
 function addOne(num) {
-  console.log("inside addOne: ", num)
-  return num + 1
-} 
+  return num + 1;
+}
 
 // Define a function that takes any person's name and returns it with a smiley :)!
 // Remember to make the name capitalized!
@@ -24,13 +23,13 @@ function addOne(num) {
 //
 // TODO: write code below
 
-function nameSmiley (personsName, :), !) {
-return personsName + :) + '!'
+function nameSmiley(name) {
+  let capName = name[0].toUpperCase() + name.slice(1);
+  return "Hi, " + capName + " :)";
 }
-
 
 // TODO: change undefined to be the name of the functions you defined
 module.exports = {
   a: addOne, // change undefined to be the name of the function you defined to increment a number (the first TODO)
-  b: undefined // change undefined to be the name of the function you defined to say hi (the second TODO)
-}
+  b: nameSmiley, // change undefined to be the name of the function you defined to say hi (the second TODO)
+};
