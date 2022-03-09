@@ -28,16 +28,23 @@ function createArray (lower, upper) {
 // error, 10    | ERROR!!!!!!!!!!
 //
 // TODO: write code below
-function upperCase (word, number) {
-  const exclamationMark = [] 
-  for (let i = 0; i < number; i++) {
-    exclamationMark.push('!')
-  }
-  return word.toUpperCase() + exclamationMark.join('')
+function stringWithUpperCase (string, num) {
+
+let outcome = string.toUpperCase()
+let exclamationMarks = ''
+
+for (let i = 0; i<num; i++) {
+
+exclamationMarks += '!'
+}
+
+outcome += exclamationMarks
+
+return outcome 
 }
 
 // change the exported value to be the name of the function you defined
 module.exports = {
   a: createArray, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
-  b: upperCase // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
+  b: stringWithUpperCase // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }
