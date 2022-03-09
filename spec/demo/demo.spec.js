@@ -1,4 +1,4 @@
-const {a, b} = require('../../src/demo/demo.js')
+const { a, b } = require('../../src/demo/demo.js')
 
 describe('Demo:', () => {
   it('numThree is 5', () => {

@@ -1,4 +1,4 @@
-const {a, b, c} = require('../../src/functions/calling-functions.js')
+const { a, b, c } = require('../../src/functions/calling-functions.js')
 
 describe('Calling Functions:', () => {
   it('hello', () => {
