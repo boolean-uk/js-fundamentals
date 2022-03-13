@@ -29,11 +29,13 @@ const firstVoucherCode = 'AA-AA-A'
 
 basket.items[0].price = 2
 
-basket.items[2] = ({
+const orange = {
   name: 'Oranges',
   price: 0.75,
   quantity: 4
-})
+};
+
+basket.items.push (orange);
 
 // Do not edit this exported object
 module.exports = {
