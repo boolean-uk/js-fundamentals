@@ -35,7 +35,7 @@ const orange = {
   quantity: 4
 };
 
-basket.items.push (orange);
+basket.items.push (orange)
 
 // Do not edit this exported object
 module.exports = {
