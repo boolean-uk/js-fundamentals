@@ -7,10 +7,10 @@ const cities = ['London', 'Shanghai', 'New York', 'Delhi', 'Kuala Lumpur']
 const names = ['Bob', 'Jane', 'Joanna']
 
 // Set fourthCity to the 4th element in the cities array
-const fourthCity = 'Delhi'
+const fourthCity = cities[3]
 
 // Set firstCity to the 1st element in the cities array
-const firstCity = 'London'
+const firstCity = cities[0]
 
 // Set lengthOfCitiesArray to the length of the cities array
 const lengthOfCitiesArray = cities.length
@@ -22,3 +22,5 @@ module.exports = {
   c: firstCity,
   d: lengthOfCitiesArray
 }
+
+// npx jasmine spec/data-types/arrays/accessing-elements.spec.js
