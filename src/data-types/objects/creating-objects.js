@@ -6,10 +6,9 @@ const person = {
 }
 const computer = {
   form: 'laptop',
-  specs: (
+  specs: 
     {memory: '16GB', 
     storage: '1TB'}
-  )
 }
 
 // Do not edit this exported object
@@ -17,3 +16,5 @@ module.exports = {
   person: person,
   computer: computer
 }
+
+// npx jasmine spec/data-types/objects/creating-objects.spec.js
