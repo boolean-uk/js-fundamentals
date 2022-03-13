@@ -19,10 +19,10 @@ numbers.push(4)
 cities.unshift('Rio')
 
 // Use an array method to remove the first item from colours
-colours.shift('Red')
+colours.shift()
 
 // Use an array method to remove the last item from keys
-keys.pop('y')
+keys.pop()
 
 // Use an array method to remove 'Jordon' from the countries array
 countries.splice(1,1)
@@ -41,3 +41,5 @@ module.exports = {
   g: fruits,
   h: pear
 }
+
+// npx jasmine spec/data-types/arrays/adding-removing-elements.spec.js
