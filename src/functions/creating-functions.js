@@ -8,6 +8,15 @@
 //
 // TODO: write code below
 
+let input = 0;
+let output = 0;
+
+function addOne (input) {
+  output = input + 1;
+  return output;
+  console.log(input, output);
+}
+
 // Define a function that takes any person's name and returns it with a smiley :)!
 // Remember to make the name capitalized!
 //
@@ -19,8 +28,20 @@
 //
 // TODO: write code below
 
+let nameAndSmiley = "";
+
+function capitalizeFirstLetter(word) {
+  return word[0].toUpperCase() + word.slice(1);
+}
+
+function addSmiley (firstName) {
+  nameAndSmiley = "Hi, " + capitalizeFirstLetter(firstName) + " :)";
+  return nameAndSmiley;
+  console.log(firstName, nameAndSmiley);
+}
+
 // TODO: change undefined to be the name of the functions you defined
 module.exports = {
-  a: undefined, // change undefined to be the name of the function you defined to increment a number (the first TODO)
-  b: undefined // change undefined to be the name of the function you defined to say hi (the second TODO)
+  a: addOne, // change undefined to be the name of the function you defined to increment a number (the first TODO)
+  b: addSmiley // change undefined to be the name of the function you defined to say hi (the second TODO)
 }
