@@ -5,6 +5,8 @@ describe("Variable Assignment:", () => {
     expect(a).toEqual(20)
   })
 
+  const firstNumber = 20
+
   it("secondNumber is 42", () => {
     expect(b).toEqual(42)
   })
