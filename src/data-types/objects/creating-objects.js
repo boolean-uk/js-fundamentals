@@ -1,14 +1,19 @@
 // TODO: write code in this section to pass the tests. You will need to add new code
 // as well as modify some of the existing code
 const person = {
-  firstName: 'Gift',
-  lastName: 'Kfoote'
+  name: 'Jane',
+  age:32
 }
 
 
 const computer = {
-  brandName: 'Jane',
-  price:0
+  form: 'laptop',
+  specs:{
+    memory:'16GB',
+    storage:'1TB'
+
+  }
+ 
 }
 
 
