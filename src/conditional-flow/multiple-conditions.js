@@ -2,7 +2,7 @@
 // than or equal to lower AND less than or equal to upper.
 // Implement this with a single condition.
 function isInRange (num, lower, upper) {
-
+return (lower<=num&&num<=upper);            
   // TODO: write code in this function body to pass the tests
 
 }
@@ -11,7 +11,11 @@ function isInRange (num, lower, upper) {
 // to "Hello" or "Goodbye". Implement this with a single
 // if statement.
 function isHelloOrGoodbye (val1) {
-
+if (val1 === "Hello" || val1 === "Goodbye") {
+  return true;
+} else { 
+  return false
+}
   // TODO: write code in this function body to pass the tests
 
 }
@@ -29,7 +33,17 @@ function isHelloOrGoodbye (val1) {
 // 13-19  | Teenager
 // 20+    | Adult
 function getAgeDescription (age) {
-
+if (age === 0) {
+  return "Baby" 
+  } else if (1<=age&&age<=4){
+    return "Toddler"
+  } else if (5<=age&&age<=12){
+    return "Child"
+  } else if (13<=age&&age<=19){
+    return "Teenager"
+  } else if (age>=20){
+    return "Adult"
+  }
   // TODO: write code in this function body to pass the tests
 }
 
