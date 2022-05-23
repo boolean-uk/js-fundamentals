@@ -9,6 +9,15 @@
 // -1, 1        | [-1, 0, 1]
 //
 // TODO: write code below
+function addNumbers(lower, upper) {
+  let getRange = []
+
+  for(let i=lower; i<upper+1; i++) {
+    getRange.push(i)
+  }
+  return  getRange 
+}
+
 
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
@@ -21,9 +30,13 @@
 // error, 10    | ERROR!!!!!!!!!!
 //
 // TODO: write code below
+function addExclamations(a, b) {
+exclamations = '!'
+  return a.toUpperCase() + exclamations.repeat(b)
+}
 
 // change the exported value to be the name of the function you defined
 module.exports = {
-  a: undefined, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
-  b: undefined // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
+  a: addNumbers, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
+  b: addExclamations // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }

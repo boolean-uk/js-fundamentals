@@ -82,7 +82,7 @@ Using what we've learned about for loops so far, we can use `array.length` to it
 
 ```javascript
 const names = ['Mike', 'Ed', 'Steven']
-for (let i=0; i<names.length; i++) {
+for (let i=0; i<names.length; i++) {j
   console.log(names[i])
 }
 ```
