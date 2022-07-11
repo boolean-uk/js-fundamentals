@@ -51,26 +51,27 @@ describe("answerSeven", () => {
 })
 
 describe("answerEight", () => {
+    console.log(MONTH)
     it("should be 'Winter'", () => {
-        if (MONTH in ['December', 'January', 'February']) {
+        if (['December', 'January', 'February'].includes(MONTH)) {
             expect(answerEight).toEqual('Winter')
         }
     })
 
     it("should be 'Autumn'", () => {
-        if (MONTH in ['September', 'October', 'November']) {
+        if (['September', 'October', 'November'].includes(MONTH)) {
             expect(answerEight).toEqual('Autumn')
         }
     })
 
     it("should be 'Summer'", () => {
-        if (MONTH in ['June', 'July', 'August']) {
+        if (['June', 'July', 'August'].includes(MONTH)) {
             expect(answerEight).toEqual('Summer')
         }
     })
 
     it("should be 'Spring'", () => {
-        if (MONTH in ['March', 'April', 'May']) {
+        if (['March', 'April', 'May'].includes(MONTH)) {
             expect(answerEight).toEqual('Spring')
         }
     })
