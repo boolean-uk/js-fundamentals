@@ -51,7 +51,6 @@ describe("answerSeven", () => {
 })
 
 describe("answerEight", () => {
-    console.log(MONTH)
     it("should be 'Winter'", () => {
         if (['December', 'January', 'February'].includes(MONTH)) {
             expect(answerEight).toEqual('Winter')
