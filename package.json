@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx jasmine",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "develop": "jasmine"
   },
   "author": "dearshrewdwit",
   "license": "ISC",
